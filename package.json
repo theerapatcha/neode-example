@@ -33,6 +33,6 @@
     "neode": "^0.2.3"
   },
   "devDependencies": {
-    "eslint": "^4.8.0"
+    "eslint": "^4.18.2"
   }
 }
