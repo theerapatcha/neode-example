@@ -1,0 +1,47 @@
+POST http://localhost:3000/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "John Doe"
+}
+
+###
+POST http://localhost:3000/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Somchai Test"
+}
+
+###
+POST http://localhost:3000/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Tester3 Test"
+}
+
+###
+POST http://localhost:3000/api/persons/0/contact/20 HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:3000/api/persons/20/contact/21 HTTP/1.1
+content-type: application/json
+
+###
+POST http://localhost:3000/api/persons/21/infect HTTP/1.1
+content-type: application/json
+
+
+###
+GET http://localhost:3000/api/persons/0/check-risk HTTP/1.1
+content-type: application/json
+
+###
+GET http://localhost:3000/api/persons HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Somchai Test"
+}

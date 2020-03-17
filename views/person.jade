@@ -1,0 +1,17 @@
+extend layout
+block content
+  div.jumbotron
+    div.container
+      p.lead List of people that #{person.get('name')} has been contacted with
+      div 
+        p Status: #{person.get('status')}
+        p InfectedTime: #{person.get('infectTime')}
+  div.getting-started.container
+    div.col-xs-12
+      p.lead Contact with:
+
+      ul.dests.list
+        each dest, index in dests._values
+          li.nav-item
+            a.nav-link(href="/persons/"+dest.id()) #{dest.get('name')} 
+            span on #{relations[index].properties['contactTime']}

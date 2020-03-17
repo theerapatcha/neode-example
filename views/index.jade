@@ -1,0 +1,12 @@
+extend layout
+block content
+  div.jumbotron
+    div.container
+      h1 Persons
+      p.lead List of person in system
+  div.getting-started.container
+    div.col-xs-12
+      ul.persons.list-inline
+        each person in persons._values
+          li.nav-item
+            a.nav-link(href="/persons/"+person.id()) #{person.get('name')}
